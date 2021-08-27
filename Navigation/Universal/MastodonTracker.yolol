@@ -1,0 +1,13 @@
+//Omniseer Signal Tracker
+if :Front!=0 then goto 3 end :FrontDistance=0 goto 4
+:FrontDistance=(1000000-:FRW)/1000 goto 4
+if :Rear!=0 then goto 5 end :RearDistance=0 goto 6
+:RearDistance=(1000000-:RR)/1000 goto 6
+if :Top!=0 then goto 7 end :TopDistance=0 goto 8
+:TopDistance=(1000000-:TP)/1000 goto 8
+if :Bottom!=0 then goto 9 end :BottomDistance=0 goto 10
+:BottomDistance=(1000000-:BTM)/1000 goto 10
+if :Port!=0 then goto 11 end :PortDistance=0 goto 12
+:PortDistance=(1000000-:PRT)/1000 goto 12
+if :Starboard!=0 then goto 13 end :StarboardDistance=0 goto 2
+:StarboardDistance=(1000000-:STB)/1000 goto 2
