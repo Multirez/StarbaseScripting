@@ -1,0 +1,6 @@
+n="\n" itr=0 IF :Scaner<1 THEN GOTO1 END
+:OreScan="Scaning..." tmp=""
+IF :Rslt<1 THEN :Scan=1 GOTO3 END
+IF itr<:Rslt THEN :idx=itr tmp+=:Mat+" "+:Vol+n itr+=1 GOTO4 END
+tmp+="done"
+:OreScan=tmp :Scaner=0 :Reset=1 GOTO1

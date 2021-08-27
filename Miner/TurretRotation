@@ -1,0 +1,20 @@
+if :Turret then goto2 else :TRL=:TR+:TCon :TRR=:TR-:TCon goto1 end
+if :Turret and :Mine then :TRL=30 :TRR=-30 :TP=10 goto2 end
+if :Turret then :TRL=0 :TRR=0 :TP=-20 goto2 else goto1 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//TR=TurretRotation Con=Convergence(0,40)
+//Turret=TurretDisabled TP=TurretPitch
