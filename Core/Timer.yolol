@@ -1,0 +1,4 @@
+d=0.2
+:T+=d :Time=:T :T1+=d :T2+=d :T3+=d :T4+=d goto2
+
+
