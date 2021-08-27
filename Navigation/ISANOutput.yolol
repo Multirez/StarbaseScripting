@@ -1,0 +1,2 @@
+R=1000 x="X:" y="\nY:" z="\nZ:" d="\nDir:" s="\nSpeed: "
+:Position=x+:XX/R*R+y+:YY/R*R+z+:ZZ/R*R+d+:Dir+s+:Speed goto2
