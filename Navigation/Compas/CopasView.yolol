@@ -1,0 +1,14 @@
+p=1000 k=2.9 l=4.4 os="~00~0" s="~" o=os goto14
+if z<0 then if x<0 then goto9 end goto7 end if x<0 then goto5 end 
+if x>r then r++ end if z>f then f++ end o+=s+r+f q/=(x-r)+(z-f) goto3
+r=0 f=0 y=:YN*k/p*p if y<0 then goto13 end goto11
+if x<r then r-- end if z>f then f++ end o+=s+r+f q/=(x-r)+(z-f) goto5
+r=0 f=0 y=:YN*k/p*p if y<0 then goto13 end goto11
+if x>r then r++ end if z<f then f-- end o+=s+r+f q/=(x-r)+(z-f) goto7
+r=0 f=0 y=:YN*k/p*p if y<0 then goto13 end goto11
+if x<r then r-- end if z<f then f-- end o+=s+r+f q/=(x-r)+(z-f) goto9
+r=0 f=0 y=:YN*k/p*p if y<0 then goto13 end goto11
+if y>u then u++ end o+=s+u if y>u then u++ end o+=s+u q/=y-u goto11
+:CompasData=o+s :CD=o+s o=os u=0 x=:XN*l/p*p z=:ZN*k/p*p goto2
+if y<u then u-- end o+=s+u if y<u then u-- end o+=s+u q/=y-u goto13
+:CompasData=o+s :CD=o+s o=os u=0 x=:XN*l/p*p z=:ZN*k/p*p goto2

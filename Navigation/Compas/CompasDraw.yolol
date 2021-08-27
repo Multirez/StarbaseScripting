@@ -1,0 +1,5 @@
+m=2 k=4  e="-" v="X" l=" " b=-m n="\n" s="~" goto5
+
+if d!=(d-(s+x+y+s)) then o+=v else o+=e end if ++x<=k then goto3 end
+if d!=(d-(s+y+s)) then o+=l+v+n else o+=l+e+n end x=-k q/=--y>=b goto3
+:Compas=o o=n d=:CompasData x=-k y=m goto3

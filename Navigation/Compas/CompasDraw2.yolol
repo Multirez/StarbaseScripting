@@ -1,0 +1,14 @@
+l=" " n="\n" x1="~-41~" x2="~-31~" x3="~-21~" x4="~-11~" x5="~01~"
+x6="~11~" x7="~21~" x8="~31~" x9="~41~" y="~1~"
+e="-" v="X" p=1000 t=:T/2 q/=(t-(t/p*p))==0.2 goto3//sync
+d=:CD o=n+e if d!=(d-x1) then o=--o+v end o+=e q/=d!=(d-x2) o=--o+v 
+d=:CD o+=e if d!=(d-x3) then o=--o+v end o+=e q/=d!=(d-x4) o=--o+v 
+d=:CD o+=e if d!=(d-x5) then o=--o+v end o+=e q/=d!=(d-x6) o=--o+v
+d=:CD o+=e if d!=(d-x7) then o=--o+v end o+=e q/=d!=(d-x8) o=--o+v
+d=:CD o+=e if d!=(d-x9) then o=--o+v end o+=l+e q/=d!=(d-y) o=--o+v
+:C2=o :Compas=:C1+:C2+:C3+:C4+:C5 goto4
+
+
+
+//o=n+d!=(d-x1)+d!=(d-x2)+d!=(d-x3)+d!=(d-x4)+d!=(d-x5)+d!=(d-x6)
+//o=o+d!=(d-x7)+d!=(d-x8)+d!=(d-x9)+l+d!=(d-y) :C2=o d=:CD goto3

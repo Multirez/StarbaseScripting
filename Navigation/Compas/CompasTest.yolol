@@ -1,0 +1,7 @@
+:XX=0 :YY=0 :ZZ=0 n=0 l=10 s=10 m=l*s
+:XX-=m-n :ZZ+=n n+=s if n<m then goto2 end n=0
+:ZZ+=m-n :XX+=n n+=s if n<m then goto3 end n=0
+:XX+=m-n :ZZ-=n n+=s if n<m then goto4 end n=0
+:ZZ-=m-n :XX-=n n+=s if n<m then goto5 end n=0
+:XX-=m-n :YY+=n n+=s if n<m then goto6 end n=0
+:YY-=m-n :XX-=n n+=s if n<m then goto7 end n=0 goto2
