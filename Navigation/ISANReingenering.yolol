@@ -1,0 +1,5 @@
+z="origin_" :at=z+"north" :bt=z+"south" :ct=z+"east" :dt=z+"west"
+o=160000 e=8*o u=e*3/13 l=2*o mm=l*13/19 k=e*3/19 nn=l*13/3 p=1000000
+t=p-:a t*=t i=p-:b i*=i g=p-:c g*=g f=p-:d f*=f 
+:xx=(t+i)/e+g/u-f/k :yy=i/l-t/mm+(g+f)/nn :zz=(g+f-t-i)/o :TS=:T goto3
+goto1
