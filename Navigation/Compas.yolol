@@ -1,4 +1,4 @@
-n=0.7 m=1-n R=1000 xs=9.99 ys=9.99 zs=9.99
+n=0.7 m=1-n R=1000 xs=9.49 ys=9.49 zs=9.49
 a=(:XX-x)*n+a*m x=:XX b=(:YY-y)*n+b*m y=:YY c=(:ZZ-z)*n+c*m z=:ZZ
 w=(a*a+b*b+c*c)^0.5 q/=w<0.1 xi=0 yi=0 zi=0 xn=0 yn=0 yn=0 goto5 
 xn=a/w yn=b/w zn=c/w xi=xn*xs/R*R yi=yn*ys/R*R zi=zn*zs/R*R
