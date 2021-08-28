@@ -1,11 +1,10 @@
-l=" " n="\n"  h="\n   +z    +y\n" x3="~-22~" x4="~-12~" x5="~02~" 
+l="   " n="\n"  h="\n   +z    +y\n  " x3="~-22~" x4="~-12~" x5="~02~" 
 x6="~12~" x7="~22~" x8="~32~" x9="~42~" y="~2~"
 e="-" v="X" p=1000 t=:T/2 q/=(t-(t/p*p))==0.1 goto3//sync
-o=h+l+l
-d=:CD o+=e if d!=(d-x3) then o=--o+v end o+=e q/=d!=(d-x4) o=--o+v
+//empty string to work in sync with other
+d=:CD o=h+e if d!=(d-x3) then o=--o+v end o+=e q/=d!=(d-x4) o=--o+v
 d=:CD o+=e if d!=(d-x5) then o=--o+v end o+=e q/=d!=(d-x6) o=--o+v
-d=:CD o+=e if d!=(d-x7) then o=--o+v end
-d=:CD o+=l+l+l+e q/=d!=(d-y) o=--o+v
+d=:CD o+=e if d!=(d-x7) then o=--o+v end o+=l+e q/=d!=(d-y) o=--o+v
 :C1=o :Compas=:C1+:C2+:C3+:C4+:C5 goto4
 
 

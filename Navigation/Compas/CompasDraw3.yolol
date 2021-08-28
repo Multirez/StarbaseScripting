@@ -3,7 +3,7 @@ x6="~10~" x7="~20~" x8="~30~" x9="~40~" l=" " xc="0" yc=l+xc
 e="-" v="X" p=1000 t=:T/2 q/=(t-(t/p*p))==0.3 goto3//sync
 d=:CD o=n+e if d!=(d-x1) then o=--o+v end o+=e q/=d!=(d-x2) o=--o+v 
 d=:CD o+=e if d!=(d-x3) then o=--o+v end o+=e q/=d!=(d-x4) o=--o+v
-d=:CD o+=xc o+=e q/=d!=(d-x6) o=--o+v
-d=:CD o+=e if d!=(d-x7) then o=--o+v end o+=e q/=d!=(d-x8) o=--o+v
-d=:CD o+=e if d!=(d-x9) then o=--o+v end o+=yc
-:C3=o :Compas=:C1+:C2+:C3+:C4+:C5 goto4
+d=:CD o+=xc+e if d!=(d-x6) then o=--o+v end o+=e q/=d!=(d-x7) o=--o+v
+d=:CD o+=e if d!=(d-x8) then o=--o+v end o+=e q/=d!=(d-x9) o=--o+v
+o+=yc :C3=o :Compas=:C1+:C2+:C3+:C4+:C5 goto4
+
