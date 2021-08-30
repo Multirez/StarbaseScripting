@@ -1,7 +1,7 @@
 s=5 d=1 u=3
 q/=:Turret :TRL=:TR+:TCon :TRR=:TR-:TCon if:Auto then goto6 end goto2
 q/=:Mine==0 :TRL=0 :TRR=0 :TP=-20 :TCon=0 goto2
-q/=:Auto==0 :TRL=30 :TRR=-30 :TP=10 goto2
+q/=:Auto==0 :TRL=30 :TRR=-30 :TP=0 goto2
 q/=:Auto q/=(:RL+:RR)<44 :TP-=s goto5
 q/=:Auto q/=(:RL+:RR)<44+:TCon*d<(30*d+15) :TCon+=s*d :Temp=d goto2
 q/=:Auto :TP+=u d*=-1 goto6
