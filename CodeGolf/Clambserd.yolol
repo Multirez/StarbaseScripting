@@ -1,0 +1,17 @@
+if:a==0 then goto10 end e="" a=:a b=:b c=:c i=:i j=:i k=:i :o=3
+x=i x-=--i q/=(a-x)!=a a-=x if i==e and a==e then:o=0 goto5 end goto2
+x=j x-=--j q/=(b-x)!=b b-=x if j==e and b==e then:o=1 goto5 end goto3
+x=k x-=--k q/=(c-x)!=c c-=x if k==e and c==e then:o=2 goto5 end goto4
+:done=1
+
+
+
+:i="nxZzAdooAZV" :a="znoAxdVZAo" :b="zAZZoAdYRxV" :c="zAZZoAdnoxV"
+:d="zkZZoAdYghV" goto1
+
+
+e="" a=:a b=:b c=:c d=:d i=:i
+x=i x-=--i k=(a-x)==a+k a-=x l=(b-x)==b+l b-=x m=(c-x)==c+m c-=x 
+d-=x q/=i!=e goto2
+:o=0 q/=a!=e+k :o=1 q/=b!=e+l :o=2 q/=c!=e+m :o=3
+:done=1 k=0 l=0 m=0 n=0
