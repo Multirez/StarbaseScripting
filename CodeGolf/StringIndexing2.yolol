@@ -1,5 +1,0 @@
-:s="lqxfffffvbborinnelwfuaaaaaaawwwwwwjvfqnnfydttrpftudueaosu"
-:i=1
-if :i-->0 then --:s goto3 end :o=:s :o-=--:s :done=1
-
-
