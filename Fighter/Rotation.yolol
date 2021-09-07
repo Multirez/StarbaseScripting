@@ -1,0 +1,1 @@
+:Rmax=25+25*:R1+50*:R2 :Rmin=-:Rmax goto1
