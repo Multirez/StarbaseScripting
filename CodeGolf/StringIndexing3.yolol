@@ -1,7 +1,10 @@
 if :s==0 then goto6 end n=-1 e="" r=e s=:s 
-c=s c-=--s if n<:i then r=c+r ++n else r=c+--r end q/=s!=e goto2
+c=s c-=--s if n<:i then r=c+r ++n else r=c+--r end goto2+s==e
 :o=r :o-=--r :done=1 goto1
 
 
 :s="lqxfvborin"
-:i=3 goto1
+:i=3 
+d="0123456789" s="3" d=d-s-d 
+
+goto1
