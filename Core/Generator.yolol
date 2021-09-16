@@ -1,4 +1,4 @@
-MaxB=:MaxBatteryPower Min=0.001
-Rate=:FuelChamberUnitRate Battery=:Battery
-if Battery<MaxB then Target=Rate+10 else Target=Rate-3 end
-if Target<Min then Target=Min end  :Generator=Target goto 2
+MaxB=:MaxBatteryPower*0.95 Min=0.001
+Target=:GeneratorUnitRate up=:StoredBatteryPower<MaxB
+Target+=10*up-3*(1-up) Target+=(Target<Min)*(Min-Target)
+:GeneratorUnitRateLimit=Target goto2
