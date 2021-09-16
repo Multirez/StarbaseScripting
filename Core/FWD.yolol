@@ -1,0 +1,6 @@
+k=100 m=2000 a=4000 b=6000 c=8000 t=10000 x=5
+f=:FWD*k l=(f-m)*x :f1=l*(l<=t)+t*(l>t) l=(f-a)*x :f2=l*(l<=t)+t*(l>t)
+l=(f-b)*x :f3=l*(l<=t)+t*(l>t) l=(f-c)*x :f4=l*(l<=t)+t*(l>t) goto2
+
+
+
